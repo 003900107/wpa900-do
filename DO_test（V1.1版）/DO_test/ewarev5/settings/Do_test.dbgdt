@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1221</ColumnWidth1></Debug-Log>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>915</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>123</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        
+        
+        
+      <MixedMode>1</MixedMode><CodeCovShow>1</CodeCovShow><InstrProfShow>1</InstrProfShow></Disassembly>
+    <CallStack><ViewArgs>1</ViewArgs></CallStack><Watch><Format><struct_types/><watch_formats><Fmt><Key>{W}Watch-0:BusBusyCounter</Key><Value>4</Value></Fmt></watch_formats></Format><Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></Watch><Locals><Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></Locals><Register/><Statics><Column0>179</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></Statics></Static>
+    <Windows>
+      
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-13937-30250</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-13414-30260</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-31098-23701</Identity><TabName>Call Stack</TabName><Factory>CallStack</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-24685-30254</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>Do_test</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-2666-30257</Identity>
+            <TabName>Disassembly</TabName>
+            <Factory>Disassembly</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-28254-23959</Identity><TabName>Locals</TabName><Factory>Locals</Factory><Session><Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></Session></Tab><Tab><Identity>TabID-16460-23975</Identity><TabName>Register</TabName><Factory>Register</Factory><Session><REG1>0</REG1><REG2>0</REG2><Group>0</Group><States>0</States></Session></Tab><Tab><Identity>TabID-14892-24005</Identity><TabName>Watch</TabName><Factory>Watch</Factory><Session><Expressions><Expression><Expression>BusBusyCounter</Expression></Expression></Expressions><TabId>0</TabId><Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></Session></Tab><Tab><Identity>TabID-23549-24047</Identity><TabName>Statics</TabName><Factory>Statics</Factory><Session><Column0>179</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3><ShowAllVars>1</ShowAllVars><SelectedVars/></Session></Tab></Tabs>
+        
+      <SelectedTab>3</SelectedTab></Wnd2></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\BaseBus_Protocol.c</Filename><XPos>0</XPos><YPos>140</YPos><SelStart>3336</SelStart><SelEnd>3336</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\bsp.c</Filename><XPos>0</XPos><YPos>314</YPos><SelStart>9014</SelStart><SelEnd>9014</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\I2CRoutines.c</Filename><XPos>0</XPos><YPos>182</YPos><SelStart>5695</SelStart><SelEnd>5695</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\user\main.c</Filename><XPos>0</XPos><YPos>32</YPos><SelStart>1057</SelStart><SelEnd>1057</SelEnd></Tab><ActiveTab>3</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\bsp.h</Filename><XPos>0</XPos><YPos>24</YPos><SelStart>287</SelStart><SelEnd>287</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01b81690><key>iaridepm.enu1</key></Toolbar-01b81690></Sizes></Row0><Row1><Sizes><Toolbar-127c4230><key>debuggergui.enu1</key></Toolbar-127c4230></Sizes></Row1><Row2><Sizes><Toolbar-127c40a0><key>armjlink.enu1</key></Toolbar-127c40a0></Sizes></Row2></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>574</Bottom><Right>197</Right><x>-2</x><y>-2</y><xscreen>199</xscreen><yscreen>193</yscreen><sizeHorzCX>124375</sizeHorzCX><sizeHorzCY>224942</sizeHorzCY><sizeVertCX>124375</sizeVertCX><sizeVertCY>671329</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>574</Bottom><Right>367</Right><x>-2</x><y>-2</y><xscreen>199</xscreen><yscreen>193</yscreen><sizeHorzCX>124375</sizeHorzCX><sizeHorzCY>224942</sizeHorzCY><sizeVertCX>230625</sizeVertCX><sizeVertCY>671329</sizeVertCY></Rect></Wnd2></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>191</Bottom><Right>1602</Right><x>-2</x><y>-2</y><xscreen>1604</xscreen><yscreen>193</yscreen><sizeHorzCX>1002500</sizeHorzCX><sizeHorzCY>224942</sizeHorzCY><sizeVertCX>124375</sizeVertCX><sizeVertCY>224942</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+
