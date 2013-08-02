@@ -11,7 +11,7 @@ ActionState=1
 Enabled=0
 ShowSource=1
 [DebugChecksum]
-Checksum=-1964520437
+Checksum=-1657725892
 [DisAssemblyWindow]
 NumStates=_ 1
 State 1=_ 1
@@ -70,6 +70,12 @@ ShowTimeLog=1
 ShowTimeSum=0
 Title0=Power [mA]
 Setup0=0 1 0 500 2 0 4 1 0
+[Disassemble mode]
+mode=0
+[Breakpoints]
+Bp0=_ "STD_CODE" "{E:\yun\百度云\github\DO_test（V1.1版）\DO_test\BSP\BaseBus_Protocol.c}.157.5@1" 0 0 0 0 "" 0 "" 0
+Bp1=_ "STD_CODE" "{E:\yun\百度云\github\wpa900-do\DO_test（V1.1版）\DO_test\BSP\I2CRoutines.c}.178.5@1" 1 0 0 0 "" 0 "" 0
+Count=2
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -77,6 +83,11 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[Aliases]
+A0=_ "E:\My Labs_4working\AI_test\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c" ""
+A1=_ "E:\My Labs_4working\WPA600\DO_test\STM32F10x_StdPeriph_Driver\src\misc.c" ""
+Count=2
+SuppressDialog=1
 [SWOTraceWindow]
 PcSampling=0
 InterruptLogs=0
@@ -96,13 +107,3 @@ Enabled=0
 Mode=3
 Graph=0
 Symbiont=0
-[Disassemble mode]
-mode=0
-[Breakpoints]
-Bp0=_ "STD_CODE" "{E:\yun\百度云\github\DO_test（V1.1版）\DO_test\BSP\BaseBus_Protocol.c}.157.5@1" 1 0 0 0 "" 0 "" 0
-Count=1
-[Aliases]
-A0=_ "E:\My Labs_4working\AI_test\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c" ""
-A1=_ "E:\My Labs_4working\WPA600\DO_test\STM32F10x_StdPeriph_Driver\src\misc.c" ""
-Count=2
-SuppressDialog=1

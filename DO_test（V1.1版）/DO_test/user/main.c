@@ -78,7 +78,9 @@ int main(void)
 
     
     Deal_Comming();
+    
     DO_Process();
+    
 #ifdef WATCHDOG
     WDGFeeding();
 #endif

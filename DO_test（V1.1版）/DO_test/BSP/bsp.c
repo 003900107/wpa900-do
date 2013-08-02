@@ -45,7 +45,8 @@ void RCC_Configuration(void)
   RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1, ENABLE);
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_I2C1, ENABLE);
   
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO | RCC_APB2Periph_GPIOD| RCC_APB2Periph_GPIOB, ENABLE);
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO | RCC_APB2Periph_GPIOD | 
+                         RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOC, ENABLE);
   
 }
 
@@ -71,7 +72,12 @@ void GPIO_Configuration(void)
   GPIO_InitStructure.GPIO_Pin =	GPIO_Pin_15;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-  GPIO_Init(GPIOB, &GPIO_InitStructure);					    
+  GPIO_Init(GPIOB, &GPIO_InitStructure);
+  
+  GPIO_InitStructure.GPIO_Pin =	GPIO_Pin_6;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+  GPIO_Init(GPIOC, &GPIO_InitStructure);  
 }
 
 
@@ -106,7 +112,6 @@ void NVIC_Configuration(void)
   NVIC_Init(&NVIC_InitStructure);
   
   NVIC_SetPriority (SysTick_IRQn, 1);
-  
 }
 
 void I2C_Configuration(void)
@@ -332,6 +337,7 @@ void DO_BSPInit(void)
   GPIO_WriteBit(PWR_LED,  Bit_RESET);
   GPIO_WriteBit(ALARM_LED,  Bit_SET);
   GPIO_WriteBit(RUNSTAT_LED,  Bit_SET);
+  GPIO_WriteBit(I2C_RESET_LED,  Bit_SET);
   
   memset(DoStruct,0,sizeof(DoStructure)*8);
 }

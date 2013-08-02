@@ -55,7 +55,6 @@ void DoCheck(unsigned char DoSeq)
 
 void Deal_Comming(void)
 {
-  
   if(1==SlaveReceptionComplete )	
   {
     if(HEADCHECK(RxBuffer[0],RxBuffer[1]))
@@ -67,6 +66,7 @@ void Deal_Comming(void)
       case DO_SEL:
         DoCheck(RxBuffer[3]);
         break;
+        
       case DO_EXE:
         {
           if((RxBuffer[3]>0)&&(RxBuffer[3]<9))
@@ -151,7 +151,7 @@ void I2CHW_Maintain(void)
     }
   }
   
- //tyh:20130730 i2c在指定次数内没有复位成功, 重启AI板
+  //tyh:20130730 i2c在指定次数内没有复位成功, 重启AI板
   if( BUSErrorCounter > I2C_BUS_ERROR_MAX_COUNT )   //当前时间约为 15*7 s
   {
     GPIO_WriteBit(ALARM_LED,  Bit_RESET);
@@ -168,7 +168,11 @@ void I2CHW_Maintain(void)
     I2CHW_Reset();
     
     //tyh:20130730 总线复位次数加"1"，
-    BUSErrorCounter++;    
+    BUSErrorCounter++; 
+    if(BUSErrorCounter%2)
+        GPIO_WriteBit(I2C_RESET_LED,  Bit_RESET);
+    else
+        GPIO_WriteBit(I2C_RESET_LED,  Bit_SET);
     
     BusBusyCounter = 0;    
   }

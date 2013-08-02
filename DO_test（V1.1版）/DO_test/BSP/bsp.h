@@ -7,6 +7,8 @@
 #define RUNSTAT_LED  GPIOD, GPIO_Pin_8
 #define PWR_LED  GPIOB, GPIO_Pin_15
 
+#define I2C_RESET_LED    GPIOC, GPIO_Pin_6
+
 #define DO0  GPIOD, GPIO_Pin_10
 #define DO1  GPIOD, GPIO_Pin_11
 #define DO2  GPIOD, GPIO_Pin_12

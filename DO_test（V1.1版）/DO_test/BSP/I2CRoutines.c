@@ -98,6 +98,7 @@ void _I2C1_EV_IRQHandler(void)
   
 }
 #endif
+
 #if I2C_METHOD == DMA
 void _I2C1_EV_IRQHandler(void)
 {
@@ -134,25 +135,28 @@ void _I2C1_EV_IRQHandler(void)
   }
 }
 #endif
+
 void _I2C1_ER_IRQHandler(void)
 {
-  
   __IO uint32_t SR1Register =0;
   
   /* Read the I2C1 status register */
   SR1Register = I2C1->SR1;
+  
   /* If AF = 1 */
   if ((SR1Register & 0x0400) == 0x0400)
   {
     I2C1->SR1 &= 0xFBFF;
     SR1Register = 0;
   }
+  
   /* If ARLO = 1 */
   if ((SR1Register & 0x0200) == 0x0200)
   {
     I2C1->SR1 &= 0xFBFF;
     SR1Register = 0;
   }
+  
   /* If BERR = 1 */
   if ((SR1Register & 0x0100) == 0x0100)
   {
@@ -161,12 +165,18 @@ void _I2C1_ER_IRQHandler(void)
   }
   
   /* If OVR = 1 */
-  
   if ((SR1Register & 0x0800) == 0x0800)
   {
     I2C1->SR1 &= 0xF7FF;
     SR1Register = 0;
   }
+  
+  //添加异常处理 tyh 20130731
+  if(SR1Register != 0)
+  {
+    //复位I2C
+    I2CHW_Reset();
+  }  
 }
 
 void _DMA1_Channel7_IRQHandler(void)
